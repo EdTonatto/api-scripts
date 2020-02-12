@@ -28,5 +28,19 @@ module.exports = {
             else
                 res.json({script_id: id, message: 'Script deleted!'})
        })
+    },
+
+    async update(req, res){
+        const id = req.params.id
+        const update = req.body
+
+        Script.updateOne({_id: id}, update, function(err){
+            if(err)
+                res.send(err)
+            else{
+                Script.update
+                res.json({script_id: id, update, message: 'Script updated!'})
+            }
+        })
     }
 }
