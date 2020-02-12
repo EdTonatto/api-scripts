@@ -1,11 +1,9 @@
 # API-Scripts
 
----
-
 ### Getting started
 #### **1. Clone repository:**
 ```sh
-git clone https://github.com/jovanidesouza/api-scripts.git
+git clone https://github.com/CodeSplit/api-scripts.git
 cd api-scripts
 ```
 
