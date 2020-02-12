@@ -17,5 +17,16 @@ module.exports = {
         })
 
         return res.json(script)
+    },
+
+    async destroy(req, res){
+       const id = req.params.id
+
+       Script.findByIdAndDelete(id, function(err){
+            if(err)
+                res.send(err)
+            else
+                res.json({script_id: id, message: 'Script deleted!'})
+       })
     }
 }
