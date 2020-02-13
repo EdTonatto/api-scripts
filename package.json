@@ -6,6 +6,7 @@
   "author": "Eduardo Tonatto <edtonatto@gmail.com>, Jovani de Souza <jovanidesouza@estudante.uffs.edu.br>",
   "license": "MIT",
   "scripts": {
+    "start": "node src/index.js",
     "dev": "nodemon src/index.js"
   },
   "dependencies": {
